@@ -7,9 +7,19 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="hello-mutiny" />
-        <module name="ds4j-bot" />
-        <module name="ds4j-new-bot-super-version" />
+        <module name="ds4j-bot-v300" />
+        <module name="ds4j-bot-v320" />
+        <module name="ds4j-bot-core" />
+      </profile>
+      <profile name="Annotation profile for quarkus-practice-parent" enabled="true">
+        <sourceOutputDir name="../target/generated-sources/annotations" />
+        <sourceTestOutputDir name="../target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ds4j-bot-dist" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="ds4j-bot-v322" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
