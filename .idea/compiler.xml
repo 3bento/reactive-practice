@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="hello-mutiny" />
         <module name="ds4j-bot" />
+        <module name="ds4j-new-bot-super-version" />
       </profile>
     </annotationProcessing>
   </component>

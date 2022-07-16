@@ -11,6 +11,7 @@
     <modules>
         <module>hello-mutiny</module>
         <module>ds4j-bot</module>
+        <module>ds4j-new-bot-super-version</module>
     </modules>
 
     <properties>
@@ -18,6 +19,13 @@
         <maven.compiler.source>${java.version}</maven.compiler.source>
         <maven.compiler.target>${java.version}</maven.compiler.target>
     </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>com.discord4j</groupId>
+            <artifactId>discord4j-core</artifactId>
+        </dependency>
+    </dependencies>
 
     <dependencyManagement>
         <dependencies>
@@ -33,7 +41,7 @@
             <dependency>
                 <groupId>com.discord4j</groupId>
                 <artifactId>discord4j-core</artifactId>
-                <version>3.2.2</version>
+                <version>3.1.0</version>
             </dependency>
 
             <!-- LOG -->
