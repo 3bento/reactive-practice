@@ -5,17 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>dev.ebento</groupId>
-    <artifactId>quarkus-practice-parent</artifactId>
+    <artifactId>reactive-practice-parent</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <!-- DISCORD BOT REACTIVE -->
-        <module>ds4j-bot-core</module>
-        <module>ds4j-bot-v320</module>
-        <module>ds4j-bot-v300</module>
-        <module>ds4j-bot-dist</module>
-        <!-- REACTIVE TESTING -->
-        <module>hello-mutiny</module>
+        <module>ds4j-bot-parent</module>
+        <module>mutiny-parent</module>
     </modules>
 
     <properties>

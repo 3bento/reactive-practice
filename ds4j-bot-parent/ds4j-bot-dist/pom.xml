@@ -3,14 +3,13 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
-        <artifactId>quarkus-practice-parent</artifactId>
+        <artifactId>ds4j-bot-parent</artifactId>
         <groupId>dev.ebento</groupId>
         <version>1.0-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>ds4j-bot-dist</artifactId>
-    <version>${project.parent.version}</version>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -36,7 +35,7 @@
     </dependencies>
 
     <build>
-        <directory>../target</directory>
+        <directory>../../target</directory>
         <finalName>ds4j-bot-${project.version}</finalName>
         <plugins>
             <plugin>
