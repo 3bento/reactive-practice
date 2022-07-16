@@ -1,11 +1,13 @@
 package dev.ebento.hellomutiny;
 
 import io.smallrye.mutiny.Uni;
-import io.smallrye.mutiny.subscription.Cancellable;
+import org.jboss.logging.Logger;
 
 import java.time.LocalDateTime;
 
 public class ItemOrFailure {
+
+    private static final Logger LOG = Logger.getLogger(ItemOrFailure.class);
 
     public static void main(String[] args) {
 
@@ -23,10 +25,9 @@ public class ItemOrFailure {
                     return i;
                 });
 
-
         uni.subscribe().with(
-                System.out::println,
-                failure -> System.out.println("Failed with "+ failure)
+               LOG::info,
+                failure -> LOG.errorv("Failed with {0}", failure.getMessage(), failure)
         );
     }
 

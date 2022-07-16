@@ -21,16 +21,26 @@
 
     <dependencyManagement>
         <dependencies>
+
+            <!-- MUTINY -->
             <dependency>
                 <groupId>io.smallrye.reactive</groupId>
                 <artifactId>mutiny</artifactId>
                 <version>1.6.0</version>
             </dependency>
 
+            <!-- DISCORD BOT -->
             <dependency>
                 <groupId>com.discord4j</groupId>
                 <artifactId>discord4j-core</artifactId>
                 <version>3.2.2</version>
+            </dependency>
+
+            <!-- LOG -->
+            <dependency>
+                <groupId>org.jboss.logging</groupId>
+                <artifactId>jboss-logging</artifactId>
+                <version>3.5.0.Final</version>
             </dependency>
 
         </dependencies>
