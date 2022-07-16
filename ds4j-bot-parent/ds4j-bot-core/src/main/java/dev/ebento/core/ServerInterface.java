@@ -1,4 +1,4 @@
-package dev.ebento;
+package dev.ebento.core;
 
 public interface ServerInterface {
 
