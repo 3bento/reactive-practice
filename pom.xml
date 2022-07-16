@@ -10,6 +10,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>hello-mutiny</module>
+        <module>ds4j-bot</module>
     </modules>
 
     <properties>
@@ -25,6 +26,13 @@
                 <artifactId>mutiny</artifactId>
                 <version>1.6.0</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.discord4j</groupId>
+                <artifactId>discord4j-core</artifactId>
+                <version>3.2.2</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 

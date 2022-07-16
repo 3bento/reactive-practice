@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>hello-mutiny</artifactId>
+    <artifactId>ds4j-bot</artifactId>
 
     <properties>
         <maven.test.skip>true</maven.test.skip>
@@ -19,8 +19,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>io.smallrye.reactive</groupId>
-            <artifactId>mutiny</artifactId>
+            <groupId>com.discord4j</groupId>
+            <artifactId>discord4j-core</artifactId>
         </dependency>
     </dependencies>
 
