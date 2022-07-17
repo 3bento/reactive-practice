@@ -7,8 +7,8 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="ds4j-bot-v300" />
-        <module name="ds4j-bot-v320" />
         <module name="hello" />
+        <module name="ds4j-bot-v320" />
         <module name="ds4j-bot-core" />
       </profile>
       <profile name="Annotation profile for reactive-practice-parent" enabled="true">
