@@ -1,4 +1,4 @@
-package dev.ebento.hellomutiny;
+package dev.ebento.hellomutiny.pipelines.uni;
 
 import io.smallrye.mutiny.Uni;
 import org.jboss.logging.Logger;
