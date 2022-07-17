@@ -14,16 +14,17 @@ public class UniAdvanced {
 
             em.complete(result);
         });
-        Uni<String> uni2 = Uni.createFrom().completionStage(uni
-                        .onItem().transform(e -> e + " B")
-                .subscribe().asCompletionStage());
+        Uni<String> uni2 = Uni.createFrom()
+                .completionStage(uni.onItem().transform(e -> e + " B")
+                        .subscribe().asCompletionStage());
 
         Uni<String> uni3 = Uni.createFrom()
                 .completionStage(uni2.onItem().transform(e -> e + " C")
                         .subscribe().asCompletionStage());
 
         Uni<String> uni4 = Uni.createFrom()
-                .completionStage(uni3.onItem().transform(e -> e + " D").subscribe().asCompletionStage());
+                .completionStage(uni3.onItem().transform(e -> e + " D")
+                        .subscribe().asCompletionStage());
 
         uni4.subscribe().with(LOG::info);
     }
